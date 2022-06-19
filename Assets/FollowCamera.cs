@@ -11,5 +11,6 @@ public class FollowCamera : MonoBehaviour
     void Update()
     {
         transform.position = thingToFollow.transform.position + new Vector3(0,0,-5);
+        transform.rotation = thingToFollow.transform.rotation;
     }
 }
