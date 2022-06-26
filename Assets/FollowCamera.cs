@@ -16,6 +16,7 @@ public class FollowCamera : MonoBehaviour
             transform.rotation = thingToFollow.transform.rotation;
         }
         else {
+            transform.rotation = new Quaternion(0,0,0,0);
             transform.position = new Vector3(2.97f, -5.67f, -14);
         }
     }
