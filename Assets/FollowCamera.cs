@@ -10,7 +10,13 @@ public class FollowCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = thingToFollow.transform.position + new Vector3(0,0,-5);
-        transform.rotation = thingToFollow.transform.rotation;
+        if (!Input.GetMouseButton(0)){
+
+            transform.position = thingToFollow.transform.position + new Vector3(0,0,-5);
+            transform.rotation = thingToFollow.transform.rotation;
+        }
+        else {
+            transform.position = new Vector3(2.97f, -5.67f, -14);
+        }
     }
 }
